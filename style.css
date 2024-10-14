@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding-inline: 2rem;
+}
+
+main {
+	flex: 1;
+}
+
+main div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.input-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border: 1px blue solid;
+	border-radius: 10px;
+	padding: 2rem;
+	align-self: center;
+}
+
+.result {
+	align-items: center;
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: center;
+}
+
+button {
+	align-self: center;
+	padding: 0.5rem 1rem;
+}

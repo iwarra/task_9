@@ -5,9 +5,55 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
 		<title>Task 9</title>
 	</head>
 	<body>
+		<header>BishBosh 2.0</header>
+		<main>
+			<div>
+				<h1>Welcome to BishBosh</h1>
+				<p>
+					This is a fun Bish-Bosh game! Enter the values for Bish, Bosh, and the loop limit to see
+					the sequence. If a number is divisible by your Bish number, it will be replaced with
+					'Bish'. If it's divisible by your Bosh number, it will be replaced with 'Bosh'. If
+					divisible by both, it will say 'Bish-Bosh'!
+				</p>
+				<section class="input-section">
+					<label for="firstDividor">
+						Please enter the Bish:
+						<input
+							type="number"
+							min="1"
+							required
+							id="bishValue" />
+					</label>
+					<label for="secondDividor">
+						Please enter the Bosh:
+						<input
+							type="number"
+							min="1"
+							required
+							id="boshValue" />
+					</label>
+					<label for="total">
+						Please enter the total:
+						<input
+							type="number"
+							min="1"
+							required
+							id="total" />
+					</label>
+					<button id="generateBtn">Generate Bish-Bosh</button>
+				</section>
+				<div
+					id="result"
+					class="result"></div>
+			</div>
+		</main>
+		<footer><p>&copy; 2024 Ivona Josipovic</p></footer>
 		<script src="bishbosh.js"></script>
 	</body>
 </html>
